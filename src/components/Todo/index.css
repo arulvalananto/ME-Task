@@ -1,0 +1,59 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid gainsboro;
+}
+
+.todo-complete,
+.todo-subTodo-item-complete {
+    text-decoration: line-through;
+}
+
+.todo-checkbox {
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.todo-checkbox-complete {
+    color: white;
+    background: green;
+}
+
+.todo-subTodo-tree {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.todo-subTodo {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.todo-subTodo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.todo-subTodo-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid gainsboro;
+}

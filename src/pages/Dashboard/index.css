@@ -1,0 +1,70 @@
+@import url('../../colors.css');
+.dashboard {
+    width: 100vw;
+    height: 100vh;
+}
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    border: 1px solid var(--light-gray);
+}
+.dashboard-image {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+
+.dashboard-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.dashboard-profilepic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+}
+.dashboard-username {
+    color: black;
+    font-weight: 600;
+}
+.dashboard-logout {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background: var(--purple);
+    color: #ffffff;
+    padding: 0.3rem 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3ms ease-in-out;
+    display: block;
+}
+
+.dashboard-logout-icon {
+    border: none;
+    outline: none;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dashboard-logout:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 400px) {
+    .dashboard-profilepic,
+    .dashboard-logout {
+        display: none;
+    }
+
+    .dashboard-logout-icon {
+        display: block;
+    }
+}
